@@ -1,0 +1,17 @@
+Declare
+  score number;
+  grade varchar(20);
+  
+Begin
+  score:= 91;
+  
+  IF (score>90) Then
+    grade := 'A';
+  End if;
+  
+  if(score>80 and score < 90) Then
+    grade := 'B';
+  End if;
+  
+ dbms_output.put_line('Grade is ' || grade);
+End;       
