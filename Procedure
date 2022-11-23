@@ -1,0 +1,15 @@
+Declare 
+    fact number := 1;
+    procedure factnum(x in number) 
+    is 
+    Begin
+        for i in 1..x 
+        loop
+        fact := i*fact;
+        end loop;
+        dbms_output.put_line(fact);
+End;
+
+Begin
+    factnum(5);
+End;
