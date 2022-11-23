@@ -1,0 +1,13 @@
+Declare 
+    c number;
+    f number;
+    
+Begin 
+    c := 100;
+    f := (9/5)*c + 32;
+    c := (5*f-5*32)/9;
+    
+    dbms_output.put_line('Temperature in farenheit is '||f);
+    dbms_output.put_line('Temperature in Celsius is '||c);
+    
+End;
