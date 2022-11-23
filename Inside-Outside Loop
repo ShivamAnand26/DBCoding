@@ -1,0 +1,14 @@
+Declare 
+    n number := 0;
+
+Begin
+    loop
+        dbms_output.put_line(' The value of n inside the loop ' || n);
+        n:=n+1;
+        
+        if(n>5) Then 
+            exit;
+        End if;
+    end loop;
+    dbms_output.put_line(' The value of n outside the loop ' || n);
+End;
