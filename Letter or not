@@ -1,0 +1,17 @@
+Declare
+ get_char char(4);
+ 
+Begin
+ get_char:='G';
+ 
+ if(get_char>='A' and get_char <='Z') OR (get_char>='a' and get_char <='z') Then
+    dbms_output.put_line('The given character is  a letter');
+    
+ End if;
+ 
+ if get_char BETWEEN '0' And '9' Then 
+    dbms_output.put_line('The given character is not a letter');
+    
+ End if;
+
+End;
