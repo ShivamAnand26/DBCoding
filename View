@@ -1,0 +1,12 @@
+Create table Employee(Name varchar(20), EmpnoNumber int, Ename Varchar2(10), job Varchar2(10), MgrNumber int, SalNumber int);
+Insert into Employee(Name, EmpnoNumber, Ename, Job, MgrNumber, SalNumber) Values('Shivain', 1201, 'Kitchloo', 'HR', 1345, 10000);
+Insert into Employee(Name, EmpnoNumber, Ename, Job, MgrNumber, SalNumber) Values('Aditi', 1209, 'Gupta', 'Manager', 1891, 15000);
+Insert into Employee(Name, EmpnoNumber, Ename, Job, MgrNumber, SalNumber) Values('Navjeet', 130, 'Kaur', 'HR', 1461, 15000);
+Insert into Employee(Name, EmpnoNumber, Ename, Job, MgrNumber, SalNumber) Values('Abhay', 1890, 'Patel', 'Developer', 1901, 90000);
+Insert into Employee(Name, EmpnoNumber, Ename, Job, MgrNumber, SalNumber) Values('Madhavi', 2090, 'Gupta', 'Manager', 2348, 12000);
+
+Create view salesown As 
+select Name, EmpnoNumber, Job
+From Employee;
+
+Select * from salesown;
