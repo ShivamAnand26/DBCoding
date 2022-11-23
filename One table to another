@@ -1,0 +1,20 @@
+Create table emp(Empno int, Ename varchar(20), Job varchar(20), Mgr number(10));
+Insert into emp(Empno, Ename, Job, Mgr) Values(1,'Shivam','Technician', 1123);
+Insert into emp(Empno, Ename, Job, Mgr) Values(2,'Sahana', 'HR', 1128);
+Insert into emp(Empno, Ename, Job, Mgr) Values(3,'Navjeet','Engineer', 1130);
+Insert into emp(Empno, Ename, Job, Mgr) Values(4,'Aditi','Technician',1144);
+Insert into emp(Empno, Ename, Job, Mgr) Values(5,'Manya','Engineer',1189);
+Drop Table emp_temp;
+Create table emp_temp(emp_id number(5), emp_email varchar2(40));
+
+Declare 
+    number_of_emp number;
+Begin
+    Select Count(Empno) Into number_of_emp
+    From emp;
+    
+    For i IN 1..number_of_emp LOOP
+        Insert into emp_temp(emp_id, emp_email) Values(10,'not available now');
+    End loop;
+End;
+
