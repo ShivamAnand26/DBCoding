@@ -1,0 +1,15 @@
+Declare 
+    n number := 20;
+    i number := 1;
+    m number := 1;
+    
+Begin
+    dbms_output.put_line('The first' || n || ' numbers are ');
+    dbms_output.put(i||' ');
+    for i in 1..n-1 loop
+       m:=m+3;
+       dbms_output.put(m||' ');
+       
+       End loop;
+       dbms_output.new_line;
+End;
