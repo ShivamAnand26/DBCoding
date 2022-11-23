@@ -1,0 +1,18 @@
+Declare
+    dt1 Date := To_Date('17-09-2022','DD-MM-YYYY');
+    get_day varchar2(20);
+    
+Begin
+    get_day := RTRIM(To_Char(dt1,'DAY'));
+    if get_day IN ('SATURDAY','SUNDAY') THEN
+        dbms_output.new_line;
+        dbms_output.put_line('it falls on weekend');
+        
+    else 
+        dbms_output.new_line;
+        dbms_output.put_line('it does not falls on weekend');
+    
+    end if;
+
+End;
+        
