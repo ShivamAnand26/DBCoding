@@ -1,0 +1,26 @@
+Declare 
+  i Number(20);
+  j Number(20);
+
+Begin 
+    dbms_output.put_line('The prime number are : ');
+    dbms_output.new_line;
+    i:=2;
+    
+    Loop 
+        j:=2;
+    Loop 
+        Exit when(Mod(i,j)=0) Or (j=i);
+        j:=j+1;
+    End loop;
+    
+    if(j=i) Then
+    dbms_output.put(i||' ');
+    End if;
+    
+    i:=i+1;
+    exit when i=100;
+    End loop;
+    dbms_output.new_line;
+    
+End;
